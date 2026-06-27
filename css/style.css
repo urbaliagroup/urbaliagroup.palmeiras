@@ -2576,26 +2576,30 @@ height:440px;
 
     .menu{
 
-        display:none;
+    display:none;
 
-        position:absolute;
+    position:absolute;
 
-        top:90px;
-        left:20px;
-        right:20px;
+    top:90px;
+    right:15px;
 
-        flex-direction:column;
+    width:260px;
 
-        background:rgba(13,92,68,.96);
+    flex-direction:column;
 
-        padding:20px;
+    background:rgba(13,92,68,.96);
 
-        border-radius:20px;
+    padding:15px;
 
-        backdrop-filter:blur(15px);
+    border-radius:20px;
 
-        z-index:9998;
-    }
+    backdrop-filter:blur(15px);
+
+    z-index:9998;
+}
+    .menu.active{
+        display:flex;
+}
 
 }
 @media (max-width:768px){
