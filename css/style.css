@@ -22,85 +22,114 @@ body{
 /*================ HEADER ================*/
 
 .header{
-    position:absolute;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:100;
-    padding:25px 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    padding: 20px 0;
+
+    background: transparent;
+
 }
 
 .header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+    max-width: 1700px;
+    margin: 0 auto;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
 }
 
 .logo img{
-    height: 75px;
+
+    height: 70px;
+    display: block;
+
 }
 
 .menu{
-    display:flex;
-    gap:35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    flex: 1;
+
+    margin: 0 30px;
+
 }
 
 .menu a{
 
-    color:white;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
 
-    text-decoration:none;
+    padding: 14px 24px;
 
-    font-weight:600;
+    border: 1px solid rgba(255,255,255,.18);
 
-    padding:12px 22px;
+    background: rgba(255,255,255,.05);
 
-    border:1px solid rgba(255,255,255,.18);
+    backdrop-filter: blur(12px);
 
-    background:rgba(255,255,255,.05);
+    border-radius: 999px;
 
-    backdrop-filter:blur(12px);
+    transition: .35s;
 
-    border-radius:50px;
-
-    transition:.35s;
+    white-space: nowrap;
 
 }
+
 .menu a:hover{
 
-    background:#0d5c44;
+    background: #0d5c44;
+    border-color: #0d5c44;
 
-    border-color:#0d5c44;
-
-    transform:translateY(-3px);
+    transform: translateY(-3px);
 
 }
+
 .btn-menu{
 
-    background:#0d5c44;
+    min-width: 200px;
 
-    color:white;
+    text-align: center;
 
-    padding:18px 34px;
+    background: #0d5c44;
+    color: white;
 
-    border-radius:60px;
+    padding: 16px 28px;
 
-    text-decoration:none;
+    border-radius: 999px;
 
-    font-weight:700;
+    text-decoration: none;
 
-    transition:.35s;
+    font-weight: 700;
 
-    box-shadow:0 10px 30px rgba(13,92,68,.35);
+    transition: .35s;
+
+    box-shadow: 0 10px 30px rgba(13,92,68,.35);
 
 }
+
 .btn-menu:hover{
 
-    background:#117253;
+    background: #117253;
 
-    transform:translateY(-3px);
-
-    box-shadow:0 15px 35px rgba(13,92,68,.45);
+    transform: translateY(-3px);
 
 }
 /*================ HERO ================*/
