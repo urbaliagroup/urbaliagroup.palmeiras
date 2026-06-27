@@ -206,9 +206,9 @@ body{
 
 .hero h1{
 
-    font-size:82px;
+    font-size:3rem;
 
-    line-height:1.1;
+    line-height:1.05;
 
     margin-bottom:20px;
 
@@ -2557,15 +2557,21 @@ height:440px;
     background:none;
     border:none;
     color:white;
-    font-size:32px;
+    font-size:36px;
     cursor:pointer;
 }
 
 @media (max-width:768px){
 
     .menu-toggle{
-        display:block;
-        z-index:1001;
+        display:block !important;
+        position:relative;
+        z-index:9999;
+        background:none;
+        border:none;
+        color:white;
+        font-size:36px;
+        cursor:pointer;
     }
 
     .menu{
@@ -2588,23 +2594,7 @@ height:440px;
 
         backdrop-filter:blur(15px);
 
-    }
-
-    .menu.active{
-        display:flex;
-    }
-
-    .menu a{
-        width:100%;
-        text-align:center;
-    }
-
-    .btn-menu{
-        display:none;
-    }
-
-    .logo img{
-        height:45px;
+        z-index:9998;
     }
 
 }
