@@ -37,16 +37,28 @@ body{
 
 .header .container{
 
-    max-width: 1700px;
+    max-width: 1800px;
     margin: 0 auto;
 
-    padding: 0 40px;
+    padding: 0 25px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     gap: 25px;
+
+}
+.header.scrolled{
+
+    background: rgba(13, 92, 68, 0.80);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+
+    transition: .4s;
 
 }
 
@@ -61,13 +73,13 @@ body{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
 
-    gap: 12px;
+    gap: 14px;
 
     flex: 1;
 
-    margin: 0 30px;
+    margin: 0 40px;
 
 }
 
@@ -104,14 +116,14 @@ body{
 
 .btn-menu{
 
-    min-width: 200px;
+    min-width: 260px;
 
     text-align: center;
 
     background: #0d5c44;
     color: white;
 
-    padding: 16px 28px;
+    padding: 18px 34px;
 
     border-radius: 999px;
 
