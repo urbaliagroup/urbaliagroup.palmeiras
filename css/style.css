@@ -2598,3 +2598,17 @@ height:440px;
     }
 
 }
+@media (max-width:768px){
+
+    .hero h1{
+        font-size: 3rem;
+        line-height: 1.05;
+    }
+
+    .hero p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 0 20px;
+    }
+
+}
