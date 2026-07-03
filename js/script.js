@@ -251,9 +251,29 @@ window.addEventListener("scroll", function(){
     }
 
 });
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const ubicacionSlider = document.querySelector('.location-content ul');
 
-menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
+if (ubicacionSlider) {
+
+    let direccion = 1;
+
+    setInterval(() => {
+
+        ubicacionSlider.scrollBy({
+            left: 170 * direccion,
+            behavior: 'smooth'
+        });
+
+        if (
+            ubicacionSlider.scrollLeft + ubicacionSlider.clientWidth >= ubicacionSlider.scrollWidth - 20
+        ) {
+            direccion = -1;
+        }
+
+        if (ubicacionSlider.scrollLeft <= 20) {
+            direccion = 1;
+        }
+
+    }, 2500);
+
+}
