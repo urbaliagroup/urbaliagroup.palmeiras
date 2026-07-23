@@ -29,8 +29,7 @@
         </script>
         <noscript>
         <img height="1" width="1" 
-        src="https://www.facebook.com/tr?id=1552719452455097&ev=PageView
-        &noscript=1"/>
+        src="https://www.facebook.com/tr?id=1552719452455097&ev=PageView&noscript=1"/>
         </noscript>
         <!-- End Facebook Pixel Code -->
 
@@ -77,10 +76,10 @@
 
             <a href="https://wa.me/51953024013"
                target="_blank"
-               class="btn-menu">
+               class="btn-menu"
+               onclick="fbq('track','Contact',{button:'Header_Agenda_Llamada'})">
 
                 Agenda tu llamada
-
             </a>
 
         </div>
@@ -125,7 +124,8 @@
 
                 <a href="https://wa.me/51953024013"
                    target="_blank"
-                   class="btn-primary">
+                   class="btn-primary"
+                   onclick="fbq('track','Contact',{button:'Hero_Agenda_Llamada'})">
 
                     Agenda una llamada
 
@@ -287,7 +287,9 @@
 
                  <a href="https://wa.me/51953024013"
                      target="_blank"
-                     class="btn-location">
+                     class="btn-location"
+                     onclick="fbq('track','Contact',{button:'Ubicacion_WhatsApp'})">
+
                      <i class="bi bi-whatsapp"></i>
                     
 
@@ -447,7 +449,8 @@
 
              <a href="https://wa.me/51953024013?text=Hola,%20quiero%20recibir%20información%20del%20Plano%20Maestro%20de%20Palmeiras%20Residencial"
                 target="_blank"
-                class="plan-whatsapp">
+                class="plan-whatsapp"
+                onclick="fbq('track','Contact',{button:'Plano_Maestro'})">
 
                  <i class="bi bi-whatsapp"></i>
 
@@ -513,7 +516,7 @@
     </div>
 
 </section>
-<script src="js/script.js"></script>
+
 
 <!--================ AVANCE DEL PROYECTO =================-->
 
@@ -863,7 +866,8 @@
 
         <a href="https://wa.me/51953024013"
            target="_blank"
-           class="cta-button">
+           class="cta-button"
+           onclick="fbq('track','Contact',{button:'CTA_Final'})">
 
             <i class="bi bi-whatsapp"></i>
 
@@ -973,11 +977,12 @@
 </div>
 <a href="https://wa.me/51953024013"
    target="_blank"
-   class="floating-whatsapp">
+   class="floating-whatsapp"
+   onclick="fbq('track','Contact',{button:'WhatsApp_Flotante'})">
 
     <i class="bi bi-whatsapp"></i>
 
 </a>
-
+<script src="js/script.js"></script>
 </body>
 </html>
